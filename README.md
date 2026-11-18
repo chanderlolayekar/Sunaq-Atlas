@@ -33,12 +33,6 @@ Sunaq-Atlas/
 ├── package.json
 └── README.md
 
-# Sunaq-Atlas
-
-**An interactive audio-visual storytelling map** of the Kodiak Archipelago exploring **311 traditional Alutiiq place names** anchored to their exact coordinates over satellite imagery, paired with **302 authentic speaker recordings**.
-
-Built on the Alutiiq Museum's public place-name dataset, Sunaq-Atlas connects Indigenous geography, language, and oral history in a guided, visual web experience.
-
 - **Project Showcase:** [Alutiiq Atlas on Peerlist](https://peerlist.io/clolayekar/project/alutiiq-atlas)
 
 ---
@@ -56,19 +50,6 @@ Built on the Alutiiq Museum's public place-name dataset, Sunaq-Atlas connects In
 - **Credits & Provenance:** Dedicated About view honoring the Alutiiq Elders, researchers, and satellite imagery providers who made this dataset possible.
 
 ---
-
-## Project Structure
-
-```text
-Sunaq-Atlas/
-├── public/               # Static assets, audio files, or local datasets
-├── src/
-│   ├── components/       # Map view, journey player, place panel, and search UI
-│   ├── data/             # Place-name dataset and journey definitions
-│   └── lib/              # Audio helpers, pronunciation parser, and utilities
-├── .gitignore
-├── package.json
-└── README.md
 
 ```
 ---
