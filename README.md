@@ -33,9 +33,6 @@ Sunaq-Atlas/
 ├── package.json
 └── README.md
 
-Here is the updated `README.md` with every Elder named individually and the exact dataset citation (`Alutiiq Museum, Kodiak Placenames (2025)`, retrieved November 6, 2026) integrated into the **Acknowledgments & Data Attribution** section:
-
-```markdown
 # Sunaq-Atlas
 
 **An interactive audio-visual storytelling map** of the Kodiak Archipelago exploring **311 traditional Alutiiq place names** anchored to their exact coordinates over satellite imagery, paired with **302 authentic speaker recordings**.
