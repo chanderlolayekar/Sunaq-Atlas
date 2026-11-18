@@ -34,19 +34,6 @@ Sunaq-Atlas/
 └── README.md
 
 ---
-
-## Features
-
-- **Interactive Archipelago Map:** Full-screen satellite map pinning 311 Alutiiq place names across the Kodiak Archipelago to their exact geographic coordinates.
-- **Seven Narrated Journeys:** Guided tours through **Sun'aq**, **Nalik**, **Ag'waneq**, **Imarpiaq**, **Kangiyaq**, **Salliitaq**, and **Uyaq**. Each journey flies from a regional district view into a two-stage descent onto each location, auto-advancing with full playback controls.
-- **Detailed Place Panel:** Clicking any location opens an in-depth view containing:
-  - Traditional Alutiiq name and English equivalent
-  - **Letter-by-letter pronunciation guide** highlighting sounds English readers commonly misread (`q`, `r`, `ll`, `ng`, `c`, and the glottal stop `'`)
-  - Authentic speaker audio recording
-  - Museum translation, historical field notes, collection photos, and exact coordinates
-- **Instant Search:** Search across all 311 Alutiiq names, English names, and translated meanings.
-- **Credits & Provenance:** Dedicated About view honoring the Alutiiq Elders, researchers, and satellite imagery providers who made this dataset possible.
-
 ```
 ---
 
