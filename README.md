@@ -33,8 +33,6 @@ Sunaq-Atlas/
 ├── package.json
 └── README.md
 
-- **Project Showcase:** [Alutiiq Atlas on Peerlist](https://peerlist.io/clolayekar/project/alutiiq-atlas)
-
 ---
 
 ## Features
@@ -48,8 +46,6 @@ Sunaq-Atlas/
   - Museum translation, historical field notes, collection photos, and exact coordinates
 - **Instant Search:** Search across all 311 Alutiiq names, English names, and translated meanings.
 - **Credits & Provenance:** Dedicated About view honoring the Alutiiq Elders, researchers, and satellite imagery providers who made this dataset possible.
-
----
 
 ```
 ---
