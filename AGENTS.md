@@ -2,31 +2,28 @@
 
 ## Project Context
 
-Start with `README.md` for local setup, environment variables, and publish workflow.
+**Sunaq-Atlas** is a standalone, open-source React + Vite interactive audio-visual map of the Kodiak Archipelago built on the Alutiiq Museum's *Kodiak Placenames* (2025) dataset.
 
-## Base44 References
+Start with `README.md` for local setup, environment variables, data attribution, and project overview.
 
-- CLI overview: https://docs.base44.com/developers/references/cli/get-started/overview.md
-- Agent skills: https://docs.base44.com/developers/backend/overview/skills.md
+## Architecture & Decoupling Notes
 
-If your agent supports Agent Skills, install or update Base44 skills before Base44-specific work:
+This repository was migrated off Base44 into a standalone open-source frontend. **Do not** re-add `@base44/sdk`, `@base44/vite-plugin`, or `base44` CLI dependencies.
 
-```bash
-npx skills add base44/skills
-```
+- Client calls routed through `src/api/base44Client.js` are backed by `src/lib/openSourceSdk.js` using the Adapter pattern so existing component imports remain intact without proprietary backend calls.
+- `vite.config.js` aliases `@` to `./src` and redirects any `@base44/sdk` imports to `src/lib/openSourceSdk.js`.
 
 ## Key Files
 
-- `src/`: frontend application source.
-- `src/api/base44Client.js`: frontend Base44 SDK client.
-- `vite.config.js`: Vite config and Base44 Vite plugin setup.
-- `.env.local`: local-only environment values; never commit secrets.
+- `src/`: frontend application source (React, Tailwind CSS, shadcn/ui).
+- `src/lib/openSourceSdk.js`: open-source drop-in adapter replacing `@base44/sdk`.
+- `src/api/base44Client.js`: client initialization wrapper consumed by components.
+- `vite.config.js`: standalone Vite configuration and `@/` path aliases.
+- `.env` / `.env.local`: local-only environment values (ignored by `.gitignore`; never commit secrets).
 
 ## Working Notes
 
-- Use `base44 dev` as the default local development command when you need the local Base44 backend. It can run the backend and frontend together.
-- When docs or code mention the frontend being started automatically, that usually means the Base44 project config includes `site.serveCommand`, for example `"serveCommand": "npm run dev"` in `base44/config.jsonc`.
-- Use `npm run dev` only for frontend-only work against the hosted Base44 backend.
-- Prefer the existing Base44 CLI workflow over adding new npm scripts for Base44-specific tasks.
-- Reuse the existing SDK client and Vite plugin patterns before adding new Base44 integration paths.
-- Run the relevant checks from `package.json` before finishing code changes.
+- Use `npm run dev` as the default local development command.
+- Use `npm run build` to verify production builds before finishing changes.
+- Preserve all cultural attributions, Elder credits, and dataset citations from the Alutiiq Museum (*Kodiak Placenames*, 2025) across the UI and documentation.
+- Run the relevant lint and build checks from `package.json` before completing code changes.
