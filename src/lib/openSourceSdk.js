@@ -1,8 +1,6 @@
 // src/lib/openSourceSdk.js
 // Open-source drop-in replacement for @base44/sdk
 
-// If you need to store places or journeys in local JSON files under src/data/,
-// import them here and map them in LOCAL_COLLECTIONS below.
 const LOCAL_COLLECTIONS = {
   User: [],
   // Place: placesData,
@@ -43,6 +41,10 @@ function createEntityHandler(entityName) {
   };
 }
 
+export function getAccessToken() {
+  return null;
+}
+
 export function createClient(config = {}) {
   const entities = new Proxy(
     {},
@@ -56,7 +58,6 @@ export function createClient(config = {}) {
   return {
     config,
     entities,
-    // Public read-only mode for Sunaq-Atlas (matches User.jsonc schema)
     auth: {
       isAuthenticated: async () => false,
       me: async () => null,
