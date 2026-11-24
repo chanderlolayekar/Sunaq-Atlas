@@ -1,7 +1,7 @@
 # Sunaq-Atlas
 
 An interactive, full-screen map of the Kodiak Archipelago exploring **311 traditional Alutiiq place names** anchored to their exact coordinates over satellite imagery, paired with **302 authentic speaker recordings**.
-
+- **Live Map:** [Explore Sunaq-Atlas](https://chanderlolayekar.github.io/Sunaq-Atlas/)
 Built on the Alutiiq Museum's public place-name dataset, Sunaq-Atlas connects Indigenous geography, language, and oral history in a guided, visual web experience.
 
 ---
